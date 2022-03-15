@@ -1,1 +1,10 @@
+spring:
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    cache: false
 
+paypay:
+  production-mode: false # true:本番モード, false: テストモード
+  api-key: [YOUR_API_KEY]                 # 発行されたAPIキー
+  api-secret-key: [YOUR_SECRET_KEY]       # 発行されたシークレット
+  assume-merchant: [YOUR_ASSUME_MERCHANT] # 発行された店舗ID

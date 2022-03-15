@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>取引結果</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+<h1>取引結果</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>決済取引ID</th>
+        <th>status</th>
+        <th>トランザクションID</th>
+        <th>売上</th>
+        <th>通貨</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${result.paymentId}"></td>
+        <td th:text="${result.status}"></td>
+        <td th:text="${result.merchantPaymentId}"></td>
+        <td th:text="${result.amount.amount}"></td>
+        <td th:text="${result.amount.currency}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
